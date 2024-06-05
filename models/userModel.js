@@ -1,7 +1,5 @@
 import mongoose from "mongoose";
 import validator from "validator";
-import bcrypt from "bcryptjs";
-import JWT from "jsonwebtoken";
 
 //schema
 const userSchema = new mongoose.Schema(
@@ -27,7 +25,7 @@ const userSchema = new mongoose.Schema(
     },
     location: {
       type: String,
-      default: "India",
+      default: "Nepal",
     },
   },
   { timestamps: true }
