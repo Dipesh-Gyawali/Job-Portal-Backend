@@ -2,6 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import testRoutes from "./routes/testRoutes.js";
 import connectDB from "./config/db.js";
+import cors from "cors";
+import morgan from "morgan";
 
 dotenv.config();
 connectDB();
